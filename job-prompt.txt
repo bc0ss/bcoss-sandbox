@@ -1,0 +1,1 @@
+Only edit docs/swarm-demo.md. Create docs/swarm-demo.md. The file must contain exactly this line and nothing else: swarm demo

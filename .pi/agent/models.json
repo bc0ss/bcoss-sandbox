@@ -1,0 +1,28 @@
+{
+  "providers": {
+    "drone": {
+      "baseUrl": "http://vllm-drone-studio:8001/v1",
+      "api": "openai-completions",
+      "apiKey": "$DRONE_API_KEY",
+      "authHeader": false,
+      "models": [
+        {
+          "id": "mlx-community/Qwen3-4B-Instruct-2507-4bit",
+          "name": "drone",
+          "reasoning": false,
+          "input": [
+            "text"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 32768,
+          "maxTokens": 512
+        }
+      ]
+    }
+  }
+}
