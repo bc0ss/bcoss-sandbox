@@ -1,0 +1,11 @@
+Only edit docs/swarm-demo.md. Create docs/swarm-demo.md. The file must contain exactly this line and nothing else: swarm demo
+
+Replan. Repeated failure:
+correction: drone-studio round 1
+builder drone-studio round 1: pass
+challenger drone-mbp PASS for drone-studio
+revision: drone-studio round 1 accepted
+correction: drone-mbp round 1
+builder drone-mbp round 1: pass
+critique: drone-studio rejected drone-mbp: FAIL
+replan: planner called after repeated failure
