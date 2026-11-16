@@ -1,0 +1,15 @@
+name: check
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: swarm demo file is one exact line when present
+        run: |
+          if [ -f docs/swarm-demo.md ]; then
+            grep -qx 'swarm demo' docs/swarm-demo.md
+          fi
