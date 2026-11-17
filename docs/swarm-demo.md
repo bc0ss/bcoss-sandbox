@@ -1,1 +1,1 @@
-swarm demo r3
+swarm demo
